@@ -65,9 +65,9 @@
 		-s: Appoint the disk space，it need the same as the disk space or partition,if you want to get accuracy perforamce.
 		-t: Running time of test case.
 
-###4.3 结果收集和打印
+###4.3 Collect result of disk
 		./dump-disk-perf.sh -d ~/ceph-perf/vmip
-        -d vmip 指定在single-vm填写ip地址。
+        -d: The directory of script "singlevm-perf.sh" result output.
 
 ##5. Multi VM stress test
 

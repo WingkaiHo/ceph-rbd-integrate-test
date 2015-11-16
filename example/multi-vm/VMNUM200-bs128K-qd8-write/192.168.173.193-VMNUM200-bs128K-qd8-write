@@ -1,0 +1,34 @@
+192.168.173.193-VMNUM200-bs128K-qd8-write: (g=0): rw=write, bs=128K-128K/128K-128K/128K-128K, ioengine=libaio, iodepth=8
+fio-2.1.10
+Starting 1 thread
+192.168.173.193-VMNUM200-bs128K-qd8-write: Laying out IO file(s) (1 file(s) / 61440MB)
+
+192.168.173.193-VMNUM200-bs128K-qd8-write: (groupid=0, jobs=1): err= 0: pid=4549: Fri Nov  6 14:02:14 2015
+  write: io=2795.9MB, bw=4711.6KB/s, iops=36, runt=607653msec
+    slat (usec): min=11, max=233645, avg=90.95, stdev=2029.02
+    clat (usec): min=3, max=30576K, avg=215973.80, stdev=1192485.07
+     lat (usec): min=164, max=30576K, avg=216065.39, stdev=1192493.14
+    clat percentiles (usec):
+     |  1.00th=[  203],  5.00th=[  470], 10.00th=[  628], 20.00th=[  756],
+     | 30.00th=[  892], 40.00th=[ 1032], 50.00th=[ 1272], 60.00th=[ 1736],
+     | 70.00th=[ 3920], 80.00th=[33024], 90.00th=[305152], 95.00th=[897024],
+     | 99.00th=[4554752], 99.50th=[8224768], 99.90th=[15007744], 99.95th=[16711680],
+     | 99.99th=[16711680]
+    bw (KB  /s): min=   17, max=71166, per=100.00%, avg=11015.20, stdev=12098.40
+    lat (usec) : 4=0.01%, 10=0.01%, 20=0.01%, 100=0.01%, 250=2.14%
+    lat (usec) : 500=3.58%, 750=13.49%, 1000=18.76%
+    lat (msec) : 2=24.84%, 4=7.30%, 10=4.16%, 20=3.86%, 50=3.43%
+    lat (msec) : 100=3.14%, 250=4.29%, 500=3.22%, 750=2.09%, 1000=1.10%
+    lat (msec) : 2000=2.21%, >=2000=2.36%
+  cpu          : usr=0.20%, sys=0.18%, ctx=6312, majf=0, minf=5
+  IO depths    : 1=4.3%, 2=0.1%, 4=0.3%, 8=95.3%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.1%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=22367/d=0, short=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=8
+
+Run status group 0 (all jobs):
+  WRITE: io=2795.9MB, aggrb=4711KB/s, minb=4711KB/s, maxb=4711KB/s, mint=607653msec, maxt=607653msec
+
+Disk stats (read/write):
+  vda: ios=0/22429, merge=0/990, ticks=0/4563520, in_queue=4718158, util=100.00%

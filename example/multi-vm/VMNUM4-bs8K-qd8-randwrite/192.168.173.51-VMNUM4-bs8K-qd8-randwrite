@@ -1,0 +1,32 @@
+192.168.173.51-VMNUM4-bs8K-qd8-randwrite: (g=0): rw=randwrite, bs=8K-8K/8K-8K/8K-8K, ioengine=libaio, iodepth=8
+fio-2.1.10
+Starting 1 thread
+
+192.168.173.51-VMNUM4-bs8K-qd8-randwrite: (groupid=0, jobs=1): err= 0: pid=1909: Tue Nov  3 19:56:47 2015
+  write: io=480064KB, bw=819306B/s, iops=100, runt=600002msec
+    slat (usec): min=4, max=10159, avg=56.12, stdev=131.71
+    clat (usec): min=4, max=96823, avg=518.64, stdev=3183.64
+     lat (usec): min=104, max=99027, avg=575.99, stdev=3234.25
+    clat percentiles (usec):
+     |  1.00th=[  127],  5.00th=[  173], 10.00th=[  209], 20.00th=[  245],
+     | 30.00th=[  262], 40.00th=[  274], 50.00th=[  286], 60.00th=[  302],
+     | 70.00th=[  322], 80.00th=[  338], 90.00th=[  370], 95.00th=[  474],
+     | 99.00th=[ 4576], 99.50th=[ 6368], 99.90th=[69120], 99.95th=[75264],
+     | 99.99th=[84480]
+    bw (KB  /s): min=  678, max=  936, per=100.00%, avg=800.58, stdev=16.67
+    lat (usec) : 10=0.05%, 20=0.01%, 100=0.05%, 250=22.19%, 500=72.91%
+    lat (usec) : 750=1.35%, 1000=0.59%
+    lat (msec) : 2=0.86%, 4=0.81%, 10=0.92%, 20=0.04%, 50=0.01%
+    lat (msec) : 100=0.20%
+  cpu          : usr=0.35%, sys=0.64%, ctx=117495, majf=0, minf=7
+  IO depths    : 1=97.3%, 2=0.4%, 4=0.9%, 8=1.4%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=60008/d=0, short=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=8
+
+Run status group 0 (all jobs):
+  WRITE: io=480064KB, aggrb=800KB/s, minb=800KB/s, maxb=800KB/s, mint=600002msec, maxt=600002msec
+
+Disk stats (read/write):
+  vda: ios=0/62164, merge=0/26602, ticks=0/98741, in_queue=98734, util=10.53%

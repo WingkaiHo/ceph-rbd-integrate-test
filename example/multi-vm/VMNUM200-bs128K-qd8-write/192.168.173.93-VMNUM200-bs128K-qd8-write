@@ -1,0 +1,34 @@
+192.168.173.93-VMNUM200-bs128K-qd8-write: (g=0): rw=write, bs=128K-128K/128K-128K/128K-128K, ioengine=libaio, iodepth=8
+fio-2.1.10
+Starting 1 thread
+192.168.173.93-VMNUM200-bs128K-qd8-write: Laying out IO file(s) (1 file(s) / 61440MB)
+
+192.168.173.93-VMNUM200-bs128K-qd8-write: (groupid=0, jobs=1): err= 0: pid=2847: Fri Nov  6 14:03:12 2015
+  write: io=2619.7MB, bw=4438.4KB/s, iops=34, runt=604390msec
+    slat (usec): min=12, max=154970, avg=68.71, stdev=1513.65
+    clat (usec): min=6, max=20465K, avg=229999.71, stdev=1165334.32
+     lat (usec): min=179, max=20465K, avg=230069.00, stdev=1165329.63
+    clat percentiles (usec):
+     |  1.00th=[  414],  5.00th=[  588], 10.00th=[  660], 20.00th=[  780],
+     | 30.00th=[  900], 40.00th=[ 1032], 50.00th=[ 1240], 60.00th=[ 1640],
+     | 70.00th=[ 3472], 80.00th=[33536], 90.00th=[301056], 95.00th=[970752],
+     | 99.00th=[4751360], 99.50th=[8454144], 99.90th=[15007744], 99.95th=[15794176],
+     | 99.99th=[16711680]
+    bw (KB  /s): min=   33, max=102400, per=100.00%, avg=10378.99, stdev=12280.30
+    lat (usec) : 10=0.02%, 20=0.01%, 100=0.01%, 250=0.25%, 500=2.07%
+    lat (usec) : 750=15.00%, 1000=20.35%
+    lat (msec) : 2=26.29%, 4=6.94%, 10=3.64%, 20=3.73%, 50=3.25%
+    lat (msec) : 100=3.10%, 250=4.59%, 500=3.14%, 750=1.77%, 1000=1.04%
+    lat (msec) : 2000=2.05%, >=2000=2.76%
+  cpu          : usr=0.15%, sys=0.12%, ctx=4297, majf=0, minf=5
+  IO depths    : 1=0.7%, 2=0.1%, 4=0.1%, 8=99.2%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.1%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=20957/d=0, short=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=8
+
+Run status group 0 (all jobs):
+  WRITE: io=2619.7MB, aggrb=4438KB/s, minb=4438KB/s, maxb=4438KB/s, mint=604390msec, maxt=604390msec
+
+Disk stats (read/write):
+  vda: ios=0/20958, merge=0/470, ticks=0/4337474, in_queue=4509884, util=100.00%

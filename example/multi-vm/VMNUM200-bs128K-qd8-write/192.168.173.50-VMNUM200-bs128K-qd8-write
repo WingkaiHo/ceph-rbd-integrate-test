@@ -1,0 +1,34 @@
+192.168.173.50-VMNUM200-bs128K-qd8-write: (g=0): rw=write, bs=128K-128K/128K-128K/128K-128K, ioengine=libaio, iodepth=8
+fio-2.1.10
+Starting 1 thread
+192.168.173.50-VMNUM200-bs128K-qd8-write: Laying out IO file(s) (1 file(s) / 61440MB)
+
+192.168.173.50-VMNUM200-bs128K-qd8-write: (groupid=0, jobs=1): err= 0: pid=2856: Fri Nov  6 14:13:42 2015
+  write: io=24000MB, bw=40960KB/s, iops=320, runt=600002msec
+    slat (usec): min=10, max=116285, avg=60.27, stdev=397.62
+    clat (usec): min=4, max=9958.1K, avg=15947.58, stdev=152564.31
+     lat (usec): min=144, max=9959.2K, avg=16008.72, stdev=152565.40
+    clat percentiles (usec):
+     |  1.00th=[  282],  5.00th=[  354], 10.00th=[  394], 20.00th=[  446],
+     | 30.00th=[  502], 40.00th=[  620], 50.00th=[  812], 60.00th=[ 1012],
+     | 70.00th=[ 1304], 80.00th=[ 2040], 90.00th=[13632], 95.00th=[46848],
+     | 99.00th=[301056], 99.50th=[518144], 99.90th=[1728512], 99.95th=[2867200],
+     | 99.99th=[6324224]
+    bw (KB  /s): min=   93, max=382470, per=100.00%, avg=51258.90, stdev=49245.50
+    lat (usec) : 10=0.01%, 20=0.01%, 100=0.01%, 250=0.35%, 500=29.22%
+    lat (usec) : 750=17.16%, 1000=12.84%
+    lat (msec) : 2=20.18%, 4=5.48%, 10=3.46%, 20=3.15%, 50=3.37%
+    lat (msec) : 100=2.12%, 250=1.45%, 500=0.70%, 750=0.22%, 1000=0.08%
+    lat (msec) : 2000=0.14%, >=2000=0.07%
+  cpu          : usr=1.36%, sys=1.70%, ctx=158354, majf=0, minf=5
+  IO depths    : 1=36.0%, 2=0.1%, 4=0.3%, 8=63.7%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=192002/d=0, short=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=8
+
+Run status group 0 (all jobs):
+  WRITE: io=24000MB, aggrb=40960KB/s, minb=40960KB/s, maxb=40960KB/s, mint=600002msec, maxt=600002msec
+
+Disk stats (read/write):
+  vda: ios=0/192203, merge=0/834, ticks=0/3100639, in_queue=3100468, util=71.81%

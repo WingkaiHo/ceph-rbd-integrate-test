@@ -1,0 +1,34 @@
+192.168.173.11-VMNUM48-bs128K-qd8-write: (g=0): rw=write, bs=128K-128K/128K-128K/128K-128K, ioengine=libaio, iodepth=8
+fio-2.1.10
+Starting 1 thread
+192.168.173.11-VMNUM48-bs128K-qd8-write: Laying out IO file(s) (1 file(s) / 61440MB)
+
+192.168.173.11-VMNUM48-bs128K-qd8-write: (groupid=0, jobs=1): err= 0: pid=1923: Thu Nov  5 21:37:25 2015
+  write: io=2495.8MB, bw=4235.4KB/s, iops=33, runt=603411msec
+    slat (usec): min=12, max=110716, avg=44.77, stdev=785.11
+    clat (usec): min=9, max=40273K, avg=240348.76, stdev=1551793.59
+     lat (usec): min=172, max=40273K, avg=240394.00, stdev=1551793.56
+    clat percentiles (usec):
+     |  1.00th=[  223],  5.00th=[  402], 10.00th=[  556], 20.00th=[  676],
+     | 30.00th=[  780], 40.00th=[  892], 50.00th=[ 1032], 60.00th=[ 1288],
+     | 70.00th=[ 1832], 80.00th=[13120], 90.00th=[197632], 95.00th=[724992],
+     | 99.00th=[6324224], 99.50th=[9109504], 99.90th=[16711680], 99.95th=[16711680],
+     | 99.99th=[16711680]
+    bw (KB  /s): min=   25, max=69664, per=100.00%, avg=12216.28, stdev=13367.80
+    lat (usec) : 10=0.01%, 20=0.01%, 100=0.01%, 250=1.83%, 500=5.32%
+    lat (usec) : 750=20.02%, 1000=20.76%
+    lat (msec) : 2=23.28%, 4=5.39%, 10=2.35%, 20=2.65%, 50=2.05%
+    lat (msec) : 100=2.83%, 250=4.51%, 500=2.57%, 750=1.46%, 1000=0.85%
+    lat (msec) : 2000=1.44%, >=2000=2.64%
+  cpu          : usr=0.09%, sys=0.09%, ctx=4946, majf=0, minf=5
+  IO depths    : 1=5.0%, 2=0.1%, 4=0.1%, 8=94.8%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.1%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=19966/d=0, short=r=0/w=0/d=0
+     latency   : target=0, window=0, percentile=100.00%, depth=8
+
+Run status group 0 (all jobs):
+  WRITE: io=2495.8MB, aggrb=4235KB/s, minb=4235KB/s, maxb=4235KB/s, mint=603411msec, maxt=603411msec
+
+Disk stats (read/write):
+  vda: ios=0/19990, merge=0/1035, ticks=0/3506667, in_queue=3757284, util=99.56%

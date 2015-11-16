@@ -1,0 +1,118 @@
+=====================seqread perf====================
+bs=128K iodepth=16 iops=4006 bw=512843KB/s 95.00th_lat=10048 avg=3971.27 util=100.00%
+bs=128K iodepth=1 iops=558 bw=71514KB/s 95.00th_lat= 2448 avg=1743.00 util=96.73%
+bs=128K iodepth=2 iops=1176 bw=150530KB/s 95.00th_lat= 2512 avg=1661.40 util=100.00%
+bs=128K iodepth=32 iops=5904 bw=755776KB/s 95.00th_lat=12992 avg=5397.28 util=99.96%
+bs=128K iodepth=4 iops=2194 bw=280889KB/s 95.00th_lat= 3888 avg=1792.38 util=100.00%
+bs=128K iodepth=64 iops=7674 bw=982303KB/s 95.00th_lat=17536 avg=8316.44 util=99.90%
+bs=128K iodepth=8 iops=3113 bw=398478KB/s 95.00th_lat= 5408 avg=2544.59 util=100.00%
+=======================================================
+bs=256K iodepth=16 iops=3705 bw=948508KB/s 95.00th_lat= 9536 avg=4284.47 util=99.92%
+bs=256K iodepth=1 iops=450 bw=115434KB/s 95.00th_lat= 2992 avg=2161.59 util=96.92%
+bs=256K iodepth=2 iops=913 bw=233954KB/s 95.00th_lat= 3088 avg=2138.26 util=100.00%
+bs=256K iodepth=32 iops=4746 bw=1186.8MB/s 95.00th_lat=14656 avg=6705.97 util=99.87%
+bs=256K iodepth=4 iops=1704 bw=436322KB/s 95.00th_lat= 4704 avg=2305.91 util=100.00%
+bs=256K iodepth=64 iops=5134 bw=1283.6MB/s 95.00th_lat=25472 avg=12429.98 util=99.83%
+bs=256K iodepth=8 iops=2342 bw=599575KB/s 95.00th_lat= 6880 avg=3379.88 util=99.99%
+=======================================================
+bs=512K iodepth=16 iops=2286 bw=1143.5MB/s 95.00th_lat=12992 avg=6920.00 util=99.89%
+bs=512K iodepth=1 iops=319 bw=163699KB/s 95.00th_lat= 4048 avg=3050.95 util=97.25%
+bs=512K iodepth=2 iops=611 bw=313139KB/s 95.00th_lat= 4576 avg=3195.59 util=100.00%
+bs=512K iodepth=32 iops=2687 bw=1343.8MB/s 95.00th_lat=25216 avg=11840.00 util=99.80%
+bs=512K iodepth=4 iops=997 bw=510670KB/s 95.00th_lat= 6368 avg=3940.00 util=100.00%
+bs=512K iodepth=64 iops=2618 bw=1309.2MB/s 95.00th_lat=56576 avg=24364.48 util=99.71%
+bs=512K iodepth=8 iops=1697 bw=868962KB/s 95.00th_lat= 8512 avg=4640.00 util=99.95%
+=======================================================
+bs=1M iodepth=16 iops=1271 bw=1271.3MB/s 95.00th_lat=23424 avg=12450.00 util=99.80%
+bs=1M iodepth=1 iops=229 bw=235298KB/s 95.00th_lat= 6176 avg=4230.00 util=97.90%
+bs=1M iodepth=2 iops=442 bw=452678KB/s 95.00th_lat= 6880 avg=4410.00 util=100.00%
+bs=1M iodepth=32 iops=1384 bw=1384.8MB/s 95.00th_lat=55000 avg=22970.00 util=99.76%
+bs=1M iodepth=4 iops=767 bw=785951KB/s 95.00th_lat= 9024 avg=5080.00 util=99.97%
+bs=1M iodepth=64 iops=1337 bw=1337.8MB/s 95.00th_lat=133000 avg=47680.00 util=99.57%
+bs=1M iodepth=8 iops=1138 bw=1138.7MB/s 95.00th_lat=12352 avg=6890.00 util=99.90%
+=======================================================
+
+=====================seqwrite perf====================
+bs=128K iodepth=16 iops=3717 bw=475858KB/s 95.00th_lat=17280 avg=4265.62 util=99.46%
+bs=128K iodepth=1 iops=4363 bw=558496KB/s 95.00th_lat= 183 avg=195.62 util=87.60%
+bs=128K iodepth=2 iops=4738 bw=606470KB/s 95.00th_lat= 322 avg=392.00 util=92.82%
+bs=128K iodepth=32 iops=3930 bw=503047KB/s 95.00th_lat=23936 avg=8092.10 util=99.54%
+bs=128K iodepth=4 iops=4453 bw=570111KB/s 95.00th_lat= 3664 avg=866.68 util=95.70%
+bs=128K iodepth=64 iops=4242 bw=542999KB/s 95.00th_lat=37000 avg=15030.00 util=98.82%
+bs=128K iodepth=8 iops=3484 bw=445956KB/s 95.00th_lat=11840 avg=2259.09 util=98.36%
+=======================================================
+bs=256K iodepth=16 iops=2432 bw=622707KB/s 95.00th_lat=17280 avg=6495.37 util=99.17%
+bs=256K iodepth=1 iops=2347 bw=600852KB/s 95.00th_lat= 322 avg=371.83 util=88.92%
+bs=256K iodepth=2 iops=2429 bw=621907KB/s 95.00th_lat= 3472 avg=774.43 util=94.14%
+bs=256K iodepth=32 iops=2438 bw=624165KB/s 95.00th_lat=29000 avg=13020.00 util=99.24%
+bs=256K iodepth=4 iops=2423 bw=620435KB/s 95.00th_lat= 8896 avg=1602.03 util=96.80%
+bs=256K iodepth=64 iops=2446 bw=626315KB/s 95.00th_lat=48000 avg=26060.00 util=98.93%
+bs=256K iodepth=8 iops=2406 bw=615976KB/s 95.00th_lat=13120 avg=3265.10 util=98.11%
+=======================================================
+bs=512K iodepth=16 iops=1211 bw=620343KB/s 95.00th_lat=29000 avg=13011.82 util=99.00%
+bs=512K iodepth=1 iops=1222 bw=625941KB/s 95.00th_lat= 3024 avg=725.38 util=90.23%
+bs=512K iodepth=2 iops=1221 bw=625207KB/s 95.00th_lat= 8512 avg=1536.65 util=94.46%
+bs=512K iodepth=32 iops=1212 bw=620967KB/s 95.00th_lat=48000 avg=26190.00 util=99.05%
+bs=512K iodepth=4 iops=1212 bw=620753KB/s 95.00th_lat=13120 avg=3195.76 util=96.67%
+bs=512K iodepth=64 iops=1217 bw=623299KB/s 95.00th_lat=85000 avg=52370.00 util=98.97%
+bs=512K iodepth=8 iops=1216 bw=622818KB/s 95.00th_lat=17280 avg=6423.75 util=98.50%
+=======================================================
+bs=1M iodepth=16 iops=605 bw=620325KB/s 95.00th_lat=47000 avg=26030.00 util=98.72%
+bs=1M iodepth=1 iops=610 bw=624667KB/s 95.00th_lat= 8096 avg=1451.12 util=91.44%
+bs=1M iodepth=2 iops=614 bw=629152KB/s 95.00th_lat=12608 avg=3048.81 util=94.40%
+bs=1M iodepth=32 iops=613 bw=628417KB/s 95.00th_lat=85000 avg=51760.00 util=98.86%
+bs=1M iodepth=4 iops=614 bw=628837KB/s 95.00th_lat=16192 avg=6182.39 util=95.11%
+bs=1M iodepth=64 iops=607 bw=622030KB/s 95.00th_lat=157000 avg=104910.00 util=98.93%
+bs=1M iodepth=8 iops=609 bw=624208KB/s 95.00th_lat=29000 avg=12760.00 util=98.16%
+=======================================================
+
+=====================randread perf====================
+bs=4K iodepth=16 iops=14608 bw=58433KB/s 95.00th_lat= 2040 avg=1087.88 util=100.00%
+bs=4K iodepth=1 iops=617 bw=2471.7KB/s 95.00th_lat= 2800 avg=1577.91 util=96.53%
+bs=4K iodepth=2 iops=1296 bw=5185.7KB/s 95.00th_lat= 2768 avg=1510.07 util=99.20%
+bs=4K iodepth=32 iops=16955 bw=67823KB/s 95.00th_lat= 2992 avg=1880.35 util=100.00%
+bs=4K iodepth=4 iops=3016 bw=12067KB/s 95.00th_lat= 2448 avg=1303.51 util=100.00%
+bs=4K iodepth=64 iops=16849 bw=67400KB/s 95.00th_lat= 5472 avg=3791.33 util=100.00%
+bs=4K iodepth=8 iops=8252 bw=33008KB/s 95.00th_lat= 1928 avg=958.65 util=100.00%
+=======================================================
+bs=8K iodepth=16 iops=15523 bw=124186KB/s 95.00th_lat= 2064 avg=1022.84 util=100.00%
+bs=8K iodepth=1 iops=628 bw=5025.4KB/s 95.00th_lat= 2800 avg=1550.73 util=96.64%
+bs=8K iodepth=2 iops=1301 bw=10414KB/s 95.00th_lat= 2768 avg=1503.48 util=99.13%
+bs=8K iodepth=32 iops=17354 bw=138834KB/s 95.00th_lat= 2960 avg=1836.87 util=100.00%
+bs=8K iodepth=4 iops=2975 bw=23800KB/s 95.00th_lat= 2544 avg=1320.45 util=100.00%
+bs=8K iodepth=64 iops=17468 bw=139747KB/s 95.00th_lat= 5088 avg=3656.69 util=100.00%
+bs=8K iodepth=8 iops=8243 bw=65952KB/s 95.00th_lat= 2128 avg=958.94 util=100.00%
+=======================================================
+bs=16K iodepth=16 iops=14169 bw=226715KB/s 95.00th_lat= 2192 avg=1120.52 util=100.00%
+bs=16K iodepth=1 iops=606 bw=9710.8KB/s 95.00th_lat= 2864 avg=1605.83 util=96.70%
+bs=16K iodepth=2 iops=1300 bw=20807KB/s 95.00th_lat= 2736 avg=1504.71 util=99.13%
+bs=16K iodepth=32 iops=16234 bw=259748KB/s 95.00th_lat= 3056 avg=1963.41 util=100.00%
+bs=16K iodepth=4 iops=2898 bw=46373KB/s 95.00th_lat= 2640 avg=1355.29 util=100.00%
+bs=16K iodepth=64 iops=16406 bw=262503KB/s 95.00th_lat= 5280 avg=3893.10 util=100.00%
+bs=16K iodepth=8 iops=7762 bw=124194KB/s 95.00th_lat= 2192 avg=1018.78 util=100.00%
+=======================================================
+
+=====================randwrite perf====================
+bs=4K iodepth=16 iops=2133 bw=8535.5KB/s 95.00th_lat=11072 avg=7490.12 util=100.00%
+bs=4K iodepth=1 iops=2101 bw=8405.6KB/s 95.00th_lat= 772 avg=456.66 util=99.56%
+bs=4K iodepth=2 iops=2090 bw=8360.2KB/s 95.00th_lat= 1608 avg=942.22 util=100.00%
+bs=4K iodepth=32 iops=2098 bw=8395.6KB/s 95.00th_lat=21632 avg=15239.00 util=99.96%
+bs=4K iodepth=4 iops=2085 bw=8343.4KB/s 95.00th_lat= 2736 avg=1906.26 util=99.84%
+bs=4K iodepth=64 iops=2127 bw=8510.9KB/s 95.00th_lat=46336 avg=30071.80 util=99.89%
+bs=4K iodepth=8 iops=2125 bw=8500.6KB/s 95.00th_lat= 5152 avg=3755.07 util=100.00%
+=======================================================
+bs=8K iodepth=16 iops=2081 bw=16649KB/s 95.00th_lat=11584 avg=7679.35 util=100.00%
+bs=8K iodepth=1 iops=2088 bw=16706KB/s 95.00th_lat= 972 avg=458.90 util=99.98%
+bs=8K iodepth=2 iops=2071 bw=16575KB/s 95.00th_lat= 1704 avg=949.13 util=99.97%
+bs=8K iodepth=32 iops=2084 bw=16675KB/s 95.00th_lat=23936 avg=15343.95 util=100.00%
+bs=8K iodepth=4 iops=2062 bw=16503KB/s 95.00th_lat= 2960 avg=1926.27 util=100.00%
+bs=8K iodepth=64 iops=2086 bw=16693KB/s 95.00th_lat=49920 avg=30657.80 util=100.00%
+bs=8K iodepth=8 iops=2081 bw=16652KB/s 95.00th_lat= 5536 avg=3832.54 util=100.00%
+=======================================================
+bs=16K iodepth=16 iops=2106 bw=33707KB/s 95.00th_lat=12480 avg=7584.39 util=99.48%
+bs=16K iodepth=1 iops=2099 bw=33594KB/s 95.00th_lat= 956 avg=455.09 util=99.96%
+bs=16K iodepth=2 iops=2083 bw=33343KB/s 95.00th_lat= 1800 avg=942.48 util=100.00%
+bs=16K iodepth=32 iops=2107 bw=33714KB/s 95.00th_lat=24448 avg=15176.60 util=100.00%
+bs=16K iodepth=4 iops=2070 bw=33123KB/s 95.00th_lat= 3024 avg=1918.08 util=100.00%
+bs=16K iodepth=64 iops=2098 bw=33579KB/s 95.00th_lat=47872 avg=30485.68 util=99.85%
+bs=16K iodepth=8 iops=2091 bw=33466KB/s 95.00th_lat= 5792 avg=3813.04 util=100.00%

@@ -116,6 +116,14 @@ for ((i=0; i<$USE_CASES; i++)) do
 			done
 		done	
 		USED=0
+		hl=$CURR_PATH/${hosts[$USED]}
+		#set tmp task hostlist 
+		echo "${hosts[$USED]}" > $hl
+		echo "$hl"
+		#pids[$USED]=$($CURR_PATH/p-fio.sh -q ${ARG_DEPTH[$i]} -s $SIZE -d $DEVICE -r ${ARG_BS[$i]} -l $hl -m ${ARG_MODE[$i]} -t $RUNTIME & echo $!)
+		$CURR_PATH/p-fio.sh -q ${ARG_DEPTH[$i]} -s $SIZE -d $DEVICE -r ${ARG_BS[$i]} -l $hl -m ${ARG_MODE[$i]} -t $RUNTIME &
+		pids[$USED]=$!
+		((USED++))
 	fi
 done
 
